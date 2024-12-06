@@ -1,0 +1,28 @@
+@import 'media-mixins';
+
+body {
+  background-color: beige;
+  font-size: 2.5rem;
+
+  @include for-small {
+    font-size: 1.5rem;
+  }
+
+  @include for-medium {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: rgb(228, 133, 133);
+
+  @include for-small {
+    font-size: 1.8rem;
+  }
+
+  @include for-medium {
+    font-size: 2.2rem;
+  }
+}
